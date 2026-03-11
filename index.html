@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de Trabalhos</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .linha-azul {
+            width: 200px;
+            height: 4px;
+            background-color: #408eff;
+            margin-bottom: 40px;
+            border-radius: 2px;
+        }
+
+        
+        .btn-grande {
+            width: 300px;
+            padding: 30px;
+            margin: 15px;
+            background-color: #ffffff;
+            color: #408eff;
+            border: 3px solid #408eff;
+            border-radius: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 2px 5px 15px #ccc;
+        }
+
+       
+        .btn-grande:hover {
+            background-color: #408eff;
+            color: white;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Menu Principal</h1>
+    <div class="linha-azul"></div>
+
+    <button class="btn-grande" id="btnA">Trabalho A: Requisição</button>
+    <button class="btn-grande" id="btnB">Trabalho B: Perguntas</button>
+
+    <script>
+        
+        var botaoA = document.getElementById('btnA');
+        var botaoB = document.getElementById('btnB');
+
+        
+        botaoA.addEventListener('click', function() {
+            
+            window.location.href = "requisicao.html";
+        });
+
+       
+        botaoB.addEventListener('click', function() {
+            
+            window.location.href = "perguntas.html";
+        });
+    </script>
+
+</body>
+</html>
