@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu de Trabalhos</title>
+    <title>Menu Principal</title>
     <style>
-       
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f7f9;
@@ -30,7 +29,6 @@
             border-radius: 2px;
         }
 
-        
         .btn-grande {
             width: 300px;
             padding: 30px;
@@ -44,13 +42,19 @@
             cursor: pointer;
             transition: 0.3s;
             box-shadow: 2px 5px 15px #ccc;
+            outline: none;
         }
 
-       
         .btn-grande:hover {
             background-color: #408eff;
             color: white;
             transform: scale(1.05);
+        }
+
+       
+        .btn-grande:active {
+            transform: scale(0.98);
+            box-shadow: 1px 2px 8px #bbb;
         }
     </style>
 </head>
@@ -63,21 +67,16 @@
     <button class="btn-grande" id="btnB">Trabalho B: Perguntas</button>
 
     <script>
-        
-        var botaoA = document.getElementById('btnA');
-        var botaoB = document.getElementById('btnB');
+    var botaoA = document.getElementById('btnA');
+    var botaoB = document.getElementById('btnB');
 
-        
-        botaoA.addEventListener('click', function() {
-            
-            window.location.href = "requisicao.html";
-        });
-
+    botaoA.addEventListener('click', function() {  
+        window.location.href = "https://gabissdsilva07.github.io/Projeto-Paulo-Requisi-o/";
+    });
+    botaoB.addEventListener('click', function() {
        
-        botaoB.addEventListener('click', function() {
-            
-            window.location.href = "perguntas.html";
-        });
+        window.location.href = "https://gabissdsilva07.github.io/Projeto-paulo-Perguntas/";
+    });
     </script>
 
 </body>
